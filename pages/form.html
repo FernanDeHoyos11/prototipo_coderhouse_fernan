@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedorForm">
+
+        <div class="logoForm">
+            <img src="../images/logo.png" alt="">
+        </div>
+
+        <div class="intro">
+            <p>
+                Para brindarle una optima atencion de nuestra parte
+                por favor ingrese los siguientes datos.
+            </p>
+        </div>
+        <form action="/signup" method="post" class="formRegister">
+            <div class="contenedorRegister">
+                <div>
+                    <label for="">Primer Nombre</label>
+                    <input type="name" name="primer_nombre" placeholder="ejemplo: Jose" required>
+                </div>
+                <div>
+                    <label for="">Segundo Nombre</label>
+                    <input type="name" name="segundo_nombre" placeholder="ejemplo: David" required>
+                </div>
+                <div>
+                    <label for="">Primer Apellido</label>
+                    <input type="name" name="primer_apellido" placeholder="ejemplo: Lopez" required>
+                </div>
+                <div>
+                    <label for="">Segundo Apellido</label>
+                    <input type="name" name="segundo_apellido" placeholder="ejemplo: Hernandez" required>
+                </div>
+                <div>
+                    <label for="">Fecha de nacimiento</label>
+                    <input type="date" name="fecha_nacimiento" required>
+                </div>
+                <div>
+                    <label for="">Cedula</label>
+                    <input type="text" name="cedula" required>
+                </div>
+                <div>
+                    <label for="">Direccion</label>
+                    <input type="text" name="direccion" placeholder="136865355" required>
+                </div>
+                <div>
+                    <label for="">Telefono</label>
+                    <input type="tel" name="telefono" required>
+                </div>
+                <div>
+                    <label for="">Correo</label>
+                    <input type="email" name="correo" placeholder="ejemplo: jose@dominio.com" required>
+                </div>
+                <div>
+                    <input type="submit" value="Registrarte" class="buttom">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
