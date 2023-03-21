@@ -611,6 +611,11 @@ p a {
     padding: 0.5rem 0;
 }
 
+/* ======= citas =======*/
+.cuerpo{
+    margin-top: 150px;
+}
+
 /* ======= responsive =======*/
 @media screen and (min-width: 1260px) {
     .formLogin .divLogo img {
