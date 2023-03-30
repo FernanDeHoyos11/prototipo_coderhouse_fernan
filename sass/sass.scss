@@ -1,0 +1,866 @@
+@import "generales";
+@import "navbar";
+@import "footer";
+
+
+
+/*inicio de css para footer*/
+
+
+
+/*inicio de css para index*/
+main {
+    padding: 10px;
+}
+
+.one {
+    padding: 2rem 9%;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    & .image {
+        flex: 1 1 45rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    & p {
+        width: 50%;
+        font-weight: bold;
+        font-variant: small-caps;
+        font-family: monospace;
+        letter-spacing: 4px;
+        color: var(--cian);
+        text-align: center;
+        font-size: 4rem;
+        padding: 0.5rem 0;
+        text-shadow: var(--text-shadow);
+    }
+
+    & div {
+        display: flex;
+        justify-content: end;
+        width: 80%;
+    }
+
+    & .parrafo_main {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+        font-size: 20px;
+    }
+}
+
+
+.divMain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.image-respon img {
+    width: 100%;
+}
+
+#imgSection img {
+    width: 100%;
+    height: 300px;
+}
+
+
+
+
+
+/* css para servicios del hospital */
+
+.icon-contenedor {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    padding-top: 5rem;
+    padding: 1rem;
+    padding-bottom: 5rem;
+
+    div {
+        background-color: rgb(240, 240, 240);
+        border: var(--border);
+        box-shadow: var(--box-shadow);
+        border-radius: 0.5rem;
+        text-align: center;
+        padding: 1rem;
+
+        h3 {
+            font-size: 2rem;
+            color: var(--black);
+            padding: 0.5rem 0;
+            text-shadow: var(--text-shadow);
+        }
+
+        i {
+            font-size: 3rem;
+            color: var(--cian);
+            padding-bottom: 0.7rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+            color: var(--light-color);
+        }
+    }
+}
+
+.two {
+    padding: 1rem 9%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2rem;
+
+    .perfil {
+        margin: 3px;
+        text-align: center;
+        background: rgb(240, 240, 240);
+        border-radius: 0.5rem;
+        box-shadow: var(--box-shadow);
+        border: var(--border);
+        padding: 1rem;
+
+        img {
+            height: 20rem;
+            border: var(--border);
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border: var(--border);
+        }
+
+        h3 {
+            margin-top: 1rem;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--black);
+        }
+
+        span {
+            font-size: 1.2rem;
+            color: var(--gray);
+            margin-top: 0.5rem;
+        }
+
+        .share a {
+            height: 2.5rem;
+            width: 2.5rem;
+            line-height: 2.3rem;
+            font-size: 2rem;
+            color: var(--cian);
+            border: var(--border);
+            border-radius: 0.5rem;
+            margin: 0.3rem;
+        }
+    }
+}
+
+.div-texto {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 2rem;
+        text-shadow: var(--text-shadow);
+        text-transform: uppercase;
+        color: var(--black);
+        font-size: 3rem;
+        letter-spacing: .4rem;
+    }
+
+    img {
+        width: 50%;
+    }
+}
+
+
+/* css para los servicios especefico del hospital */
+
+.three {
+    padding: 1rem 9%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 2rem;
+
+    div {
+        background: rgb(240, 240, 240);
+        border-radius: 0.5rem;
+        box-shadow: var(--box-shadow);
+        border: var(--border);
+        padding: 1.5rem;
+
+        i {
+            color: var(--cian);
+            font-size: 3rem;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: var(--black);
+            font-size: 1.5rem;
+            padding: 1rem 0;
+        }
+
+        .btn span {
+            padding: 0.7rem 1rem;
+            border-radius: 0.5rem;
+            background: var(--cian);
+            color: rgb(240, 240, 240);
+            margin-left: 0.5rem;
+        }
+
+        p {
+            color: var(--light-color);
+            font-size: 1.4rem;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.2rem;
+            padding-left: 1rem;
+            border: var(--border);
+            border-radius: 0.5rem;
+            box-shadow: var(--box-shadow);
+            color: var(--cian);
+            cursor: pointer;
+            font-size: 1.2rem;
+            background: rgb(240, 240, 240);
+        }
+    }
+}
+
+/* ======= login =======*/
+
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+
+    .imgLogo {
+        height: 110px;
+        width: 110px;
+        border-radius: 150px;
+    }
+
+}
+
+.contenedor-login {
+    margin: 100px 30px 30px;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #9af0ff, #caeffa, #e6f4ff);
+}
+
+.formLogin {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    .divLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+
+
+        img {
+            width: 80%;
+        }
+    }
+
+
+    .contenedor {
+        width: 50%;
+        /* Gradiente de color de fondo */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+
+        div {
+            width: 80%;
+            padding: 10px;
+            margin: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            p {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-left: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: #1121ff;
+                }
+            }
+
+
+            input {
+                border: none;
+                height: max-content;
+                border-radius: 10px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                padding-left: 10px;
+                width: 100%;
+                height: 30px;
+            }
+
+            &:focus,
+            input[type]:focus {
+                border-color: rgb(14, 29, 243);
+                box-shadow: 0 1px 1px rgba(9, 226, 197, 0.075)inset, 0 0 8px rgba(0, 195, 255, 0.705);
+                outline: 0 none;
+            }
+        }
+
+    }
+
+
+
+
+    .buttom {
+        background-image: linear-gradient(to bottom right, #11c8ff, #2196F3);
+        /* Gradiente de color de fondo */
+        border: none;
+        /* Borde sin estilo */
+        color: white;
+        /* Color de texto */
+        padding-top: 20px;
+        padding-block-end: 30px;
+        text-decoration: none;
+        /* Sin subrayado */
+        display: inline-block;
+        /* Mostrar como bloque */
+        font-size: 16px;
+        /* Tamaño de la fuente */
+        margin: 4px 2px;
+        /* Margen entre elementos */
+        cursor: pointer;
+        /* Cambiar el cursor al pasar el ratón */
+        border-radius: 50px;
+        /* Dar forma circular al botón */
+
+
+        &hover {
+            background-image: linear-gradient(to bottom right, #096683, #53b1ff);
+            /* Gradiente de color de fondo */
+            border: none;
+            /* Borde sin estilo */
+            color: white;
+            /* Color de texto */
+            padding-top: 20px;
+            padding-block-end: 30px;
+            text-decoration: none;
+            /* Sin subrayado */
+            display: inline-block;
+            /* Mostrar como bloque */
+            font-size: 16px;
+            /* Tamaño de la fuente */
+            margin: 4px 2px;
+            /* Margen entre elementos */
+            cursor: pointer;
+            /* Cambiar el cursor al pasar el ratón */
+            border-radius: 50px;
+            /* Dar forma circular al botón */
+        }
+    }
+}
+
+.credit {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+/* ======= register =======*/
+.contenedorForm {
+    background-image: linear-gradient(to bottom right, #9af0ff, #caeffa, #e6f4ff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .intro {
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            justify-content: center;
+            font-weight: bold;
+            font-variant: small-caps;
+            font-family: monospace;
+            letter-spacing: 4px;
+            color: gray;
+            text-align: center;
+            font-size: 2rem;
+            padding: 0.5rem 0;
+        }
+    }
+
+
+
+    .logoForm {
+
+        width: 20%;
+        height: 20%;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 150px;
+        }
+    }
+
+    .formRegister {
+        margin: 100px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+
+        .contenedorRegister {
+            background: transparent;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+
+            div {
+                width: 300px;
+                padding: 10px;
+                margin: 5px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+                input {
+                    border: none;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    padding-left: 10px;
+                    width: 95%;
+                    height: 30px;
+                    border-radius: 10px;
+                }
+
+            }
+        }
+    }
+}
+
+
+/* ======= citas =======*/
+.cuerpo {
+    margin-top: 150px;
+}
+
+
+/* ====== contacto ====== */
+form {
+    margin: 50px auto;
+    width: 60%;
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    input,
+    textarea,
+    select {
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+        box-sizing: border-box;
+    
+        &:focus {
+            border-color: rgb(14, 29, 243);
+            box-shadow: 0 1px 1px rgba(9, 226, 197, 0.075)inset, 0 0 8px rgba(0, 195, 255, 0.705);
+            outline: 0 none;
+        }
+    }
+    
+    input[type="submit"] {
+        background-color: #008CBA;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+    
+        &:hover {
+            background-color: #005D7A;
+        }
+    }
+}    
+
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* ======= responsive =======*/
+@media screen and (min-width: 1260px) {
+    .formLogin .divLogo img {
+        width: 60%;
+    }
+
+}
+
+@media screen and (min-width: 1180px) {
+    .one img {
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (min-width: 720px) {
+    .toggle-menu {
+        display: none;
+
+    }
+
+    .divNav {
+        transform: translateY(0);
+    }
+
+    .image-respon {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1040px) {
+    .perfil img {
+        height: auto;
+        width: 100%;
+    }
+
+    .two {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+}
+
+@media screen and (max-width: 840px) {
+
+
+    .two {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    .three div a {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+
+    /*     ========= responsive para navbar ========= */
+    .intro {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 0%;
+
+        p {
+            font-size: 25px;
+        }
+    }
+
+
+
+    .logoForm {
+        width: 40%;
+    }
+
+
+
+    nav {
+        height: 70px;
+        background-color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+
+        div {
+            background-color: white;
+
+        }
+
+        .divNav {
+            flex-direction: column;
+            padding: 3px;
+            margin: 3px;
+
+            ul {
+                padding-left: 0px;
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    border: 1px black solid;
+                    border-radius: 10px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    padding: 3px;
+                    margin: 3px;
+                }
+            }
+
+            .navAuth {
+                padding-right: 0;
+
+                .signIn {
+                    background-color: aqua;
+                    border-radius: 10px;
+                }
+
+                .signUp {
+                    border: 1px aqua solid;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+
+    .checkMenu:checked+.divNav {
+        width: 200px;
+        transform: translateX(0);
+        border-radius: 10px;
+    }
+
+    .liimg {
+        background: transparent;
+    }
+
+    .one {
+        padding: 2rem 9%;
+
+        .image {
+            display: none;
+        }
+
+        p {
+            width: 100%;
+        }
+    }
+
+
+    .image-respon img {
+        padding-top: 5rem;
+    }
+
+    /*  ========== responsive para login ======== */
+
+
+    .formLogin {
+        .divLogo {
+            display: none;
+        }
+
+        .contenedor {
+            width: 100%;
+        }
+    }
+
+    /*  ========== responsive para body index ======== */
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 100px;
+    }
+
+
+
+    #imgSection {
+        width: 50%;
+    }
+
+    .three div h3 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .two {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    .contenedor-login {
+        margin: 100px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .two {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /*  ========== responsive para text p en register ======== */
+    .intro {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 0%;
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+
+    .one p {
+        font-size: 3rem;
+    }
+
+    /*  ========== responsive para body index ======== */
+    .two {
+        padding: 0%;
+    }
+
+    .three {
+        padding: 0%;
+        padding-top: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    /*  ========== responsive para register ======== */
+    .one {
+        justify-content: center;
+
+        p {
+            font-size: 2.5rem;
+            width: 100%;
+        }
+
+    }
+
+    .formRegister .contenedorRegister div {
+        width: 200px;
+    }
+
+    .intro p {
+        font-size: 20px;
+    }
+
+
+    .one img {
+        display: none;
+    }
+
+    .two {
+        padding: 0%;
+    }
+
+    .three {
+        padding: 1rem 1%;
+        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+
+        div {
+            padding: 2rem;
+        }
+    }
+
+    .footer .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+        gap: 2rem;
+    }
+
+    .credit {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 280px) {
+    .one {
+        padding-top: 0%;
+    }
+
+    .two {
+        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    }
+
+    .perfil {
+        padding: 0.5rem;
+    }
+
+    .three div a {
+        font-size: 0.8rem;
+    }
+
+    .three div .btn span {
+        padding: 0.3rem 0.5rem;
+    }
+
+    .credit {
+        font-size: 10px;
+    }
+}

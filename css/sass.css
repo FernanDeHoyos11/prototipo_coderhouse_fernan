@@ -1,0 +1,835 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+/* variables css */
+:root {
+  --cian: rgb(49, 192, 202);
+  --black: rgb(68, 68, 68);
+  --light-color: rgb(105, 103, 103);
+  --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+  --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
+  --border: .1rem solid var(--cian);
+  --black: rgb(0, 10, 10);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  background-image: url("../images/background.svg");
+}
+
+/*inicio de css para navbar*/
+nav div {
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0.5rem 0.5rem 0 rgba(22, 160, 133, 0.2);
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+  transform: translateY(-100%);
+}
+nav div ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+nav div ul li {
+  padding: 10px;
+}
+nav div ul li a {
+  color: black;
+  text-decoration: none;
+}
+nav div ul li a:hover {
+  font-size: 20px;
+}
+
+/* para hacer el nav responcive */
+.toggle-menu {
+  position: absolute;
+  top: 3.5rem;
+  left: 0.5rem;
+  cursor: pointer;
+  width: 40px;
+  z-index: 1;
+}
+.toggle-menu img {
+  width: 100%;
+}
+
+.show-menu {
+  transform: translateY(0);
+}
+
+.checkMenu {
+  display: none;
+}
+
+.checkMenu:checked + .divNav {
+  transform: translateY(0);
+}
+
+.navAuth {
+  padding-right: 30px;
+}
+
+li img {
+  width: 80px;
+  height: 80px;
+}
+
+.signIn {
+  background-color: aqua;
+  border-radius: 10px;
+}
+
+.signUp {
+  border: 1px aqua solid;
+  border-radius: 10px;
+}
+
+footer {
+  padding: 1rem 9%;
+}
+footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 2rem;
+}
+footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+  padding: 1rem 0;
+}
+footer .box-container .box a {
+  display: block;
+  font-size: 1rem;
+  color: var(--light-color);
+  padding: 0.5rem 0;
+}
+footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--black);
+}
+footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+footer .credit {
+  padding: 1rem;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--light-color);
+  border-top: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+footer .credit span {
+  color: var(--black);
+}
+
+/*inicio de css para footer*/
+/*inicio de css para index*/
+main {
+  padding: 10px;
+}
+
+.one {
+  padding: 2rem 9%;
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.one .image {
+  flex: 1 1 45rem;
+}
+.one .image img {
+  width: 100%;
+}
+.one p {
+  width: 50%;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-family: monospace;
+  letter-spacing: 4px;
+  color: var(--cian);
+  text-align: center;
+  font-size: 4rem;
+  padding: 0.5rem 0;
+  text-shadow: var(--text-shadow);
+}
+.one div {
+  display: flex;
+  justify-content: end;
+  width: 80%;
+}
+.one .parrafo_main {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  font-size: 20px;
+}
+
+.divMain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.image-respon img {
+  width: 100%;
+}
+
+#imgSection img {
+  width: 100%;
+  height: 300px;
+}
+
+/* css para servicios del hospital */
+.icon-contenedor {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  padding-top: 5rem;
+  padding: 1rem;
+  padding-bottom: 5rem;
+}
+.icon-contenedor div {
+  background-color: rgb(240, 240, 240);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+.icon-contenedor div h3 {
+  font-size: 2rem;
+  color: var(--black);
+  padding: 0.5rem 0;
+  text-shadow: var(--text-shadow);
+}
+.icon-contenedor div i {
+  font-size: 3rem;
+  color: var(--cian);
+  padding-bottom: 0.7rem;
+}
+.icon-contenedor div p {
+  font-size: 1.3rem;
+  color: var(--light-color);
+}
+
+.two {
+  padding: 1rem 9%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 2rem;
+}
+.two .perfil {
+  margin: 3px;
+  text-align: center;
+  background: rgb(240, 240, 240);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+  padding: 1rem;
+}
+.two .perfil img {
+  height: 20rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: var(--border);
+}
+.two .perfil h3 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--black);
+}
+.two .perfil span {
+  font-size: 1.2rem;
+  color: var(--gray);
+  margin-top: 0.5rem;
+}
+.two .perfil .share a {
+  height: 2.5rem;
+  width: 2.5rem;
+  line-height: 2.3rem;
+  font-size: 2rem;
+  color: var(--cian);
+  border: var(--border);
+  border-radius: 0.5rem;
+  margin: 0.3rem;
+}
+
+.div-texto {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.div-texto h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+  text-shadow: var(--text-shadow);
+  text-transform: uppercase;
+  color: var(--black);
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+}
+.div-texto img {
+  width: 50%;
+}
+
+/* css para los servicios especefico del hospital */
+.three {
+  padding: 1rem 9%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 2rem;
+}
+.three div {
+  background: rgb(240, 240, 240);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+  padding: 1.5rem;
+}
+.three div i {
+  color: var(--cian);
+  font-size: 3rem;
+  padding-bottom: 0.5rem;
+}
+.three div h3 {
+  color: var(--black);
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.three div .btn span {
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--cian);
+  color: rgb(240, 240, 240);
+  margin-left: 0.5rem;
+}
+.three div p {
+  color: var(--light-color);
+  font-size: 1.4rem;
+}
+.three div a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.2rem;
+  padding-left: 1rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  color: var(--cian);
+  cursor: pointer;
+  font-size: 1.2rem;
+  background: rgb(240, 240, 240);
+}
+
+/* ======= login =======*/
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.logo .imgLogo {
+  height: 110px;
+  width: 110px;
+  border-radius: 150px;
+}
+
+.contenedor-login {
+  margin: 100px 30px 30px;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, #9af0ff, #caeffa, #e6f4ff);
+}
+
+.formLogin {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.formLogin .divLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.formLogin .divLogo img {
+  width: 80%;
+}
+.formLogin .contenedor {
+  width: 50%;
+  /* Gradiente de color de fondo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.formLogin .contenedor div {
+  width: 80%;
+  padding: 10px;
+  margin: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.formLogin .contenedor div p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 10px;
+}
+.formLogin .contenedor div p a {
+  text-decoration: none;
+  color: #1121ff;
+}
+.formLogin .contenedor div input {
+  border: none;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-left: 10px;
+  width: 100%;
+  height: 30px;
+}
+.formLogin .contenedor div:focus,
+.formLogin .contenedor div input[type]:focus {
+  border-color: rgb(14, 29, 243);
+  box-shadow: 0 1px 1px rgba(9, 226, 197, 0.075) inset, 0 0 8px rgba(0, 195, 255, 0.705);
+  outline: 0 none;
+}
+.formLogin .buttom {
+  background-image: linear-gradient(to bottom right, #11c8ff, #2196F3);
+  /* Gradiente de color de fondo */
+  border: none;
+  /* Borde sin estilo */
+  color: white;
+  /* Color de texto */
+  padding-top: 20px;
+  -webkit-padding-after: 30px;
+          padding-block-end: 30px;
+  text-decoration: none;
+  /* Sin subrayado */
+  display: inline-block;
+  /* Mostrar como bloque */
+  font-size: 16px;
+  /* Tamaño de la fuente */
+  margin: 4px 2px;
+  /* Margen entre elementos */
+  cursor: pointer;
+  /* Cambiar el cursor al pasar el ratón */
+  border-radius: 50px;
+  /* Dar forma circular al botón */
+}
+.formLogin .buttomhover {
+  background-image: linear-gradient(to bottom right, #096683, #53b1ff);
+  /* Gradiente de color de fondo */
+  border: none;
+  /* Borde sin estilo */
+  color: white;
+  /* Color de texto */
+  padding-top: 20px;
+  -webkit-padding-after: 30px;
+          padding-block-end: 30px;
+  text-decoration: none;
+  /* Sin subrayado */
+  display: inline-block;
+  /* Mostrar como bloque */
+  font-size: 16px;
+  /* Tamaño de la fuente */
+  margin: 4px 2px;
+  /* Margen entre elementos */
+  cursor: pointer;
+  /* Cambiar el cursor al pasar el ratón */
+  border-radius: 50px;
+  /* Dar forma circular al botón */
+}
+
+.credit {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+/* ======= register =======*/
+.contenedorForm {
+  background-image: linear-gradient(to bottom right, #9af0ff, #caeffa, #e6f4ff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorForm .intro {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.contenedorForm .intro p {
+  justify-content: center;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-family: monospace;
+  letter-spacing: 4px;
+  color: gray;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.5rem 0;
+}
+.contenedorForm .logoForm {
+  width: 20%;
+  height: 20%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.contenedorForm .logoForm img {
+  width: 100%;
+  height: 100%;
+  border-radius: 150px;
+}
+.contenedorForm .formRegister {
+  margin: 100px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.contenedorForm .formRegister .contenedorRegister {
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.contenedorForm .formRegister .contenedorRegister div {
+  width: 300px;
+  padding: 10px;
+  margin: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contenedorForm .formRegister .contenedorRegister div input {
+  border: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-left: 10px;
+  width: 95%;
+  height: 30px;
+  border-radius: 10px;
+}
+
+/* ======= citas =======*/
+.cuerpo {
+  margin-top: 150px;
+}
+
+/* ====== contacto ====== */
+form {
+  margin: 50px auto;
+  width: 60%;
+}
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+form input,
+form textarea,
+form select {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: rgb(14, 29, 243);
+  box-shadow: 0 1px 1px rgba(9, 226, 197, 0.075) inset, 0 0 8px rgba(0, 195, 255, 0.705);
+  outline: 0 none;
+}
+form input[type=submit] {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+form input[type=submit]:hover {
+  background-color: #005D7A;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+/* ======= responsive =======*/
+@media screen and (min-width: 1260px) {
+  .formLogin .divLogo img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .one img {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 720px) {
+  .toggle-menu {
+    display: none;
+  }
+  .divNav {
+    transform: translateY(0);
+  }
+  .image-respon {
+    display: none;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .perfil img {
+    height: auto;
+    width: 100%;
+  }
+  .two {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+}
+@media screen and (max-width: 840px) {
+  .two {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+  .two img {
+    height: auto;
+    width: 100%;
+  }
+  .three div a {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  /*     ========= responsive para navbar ========= */
+  .intro {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0%;
+  }
+  .intro p {
+    font-size: 25px;
+  }
+  .logoForm {
+    width: 40%;
+  }
+  nav {
+    height: 70px;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    box-shadow: 0.5rem 0.5rem 0 rgba(22, 160, 133, 0.2);
+  }
+  nav div {
+    background-color: white;
+  }
+  nav .divNav {
+    flex-direction: column;
+    padding: 3px;
+    margin: 3px;
+  }
+  nav .divNav ul {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  nav .divNav ul li {
+    border: 1px black solid;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    margin: 3px;
+  }
+  nav .divNav .navAuth {
+    padding-right: 0;
+  }
+  nav .divNav .navAuth .signIn {
+    background-color: aqua;
+    border-radius: 10px;
+  }
+  nav .divNav .navAuth .signUp {
+    border: 1px aqua solid;
+    border-radius: 10px;
+  }
+  .checkMenu:checked + .divNav {
+    width: 200px;
+    transform: translateX(0);
+    border-radius: 10px;
+  }
+  .liimg {
+    background: transparent;
+  }
+  .one {
+    padding: 2rem 9%;
+  }
+  .one .image {
+    display: none;
+  }
+  .one p {
+    width: 100%;
+  }
+  .image-respon img {
+    padding-top: 5rem;
+  }
+  /*  ========== responsive para login ======== */
+  .formLogin .divLogo {
+    display: none;
+  }
+  .formLogin .contenedor {
+    width: 100%;
+  }
+  /*  ========== responsive para body index ======== */
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px;
+  }
+  #imgSection {
+    width: 50%;
+  }
+  .three div h3 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .two {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+  .two img {
+    height: auto;
+    width: 100%;
+  }
+  .contenedor-login {
+    margin: 100px 0px 0px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .two {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+}
+@media screen and (max-width: 480px) {
+  /*  ========== responsive para text p en register ======== */
+  .intro {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0%;
+  }
+  .intro p {
+    font-size: 20px;
+  }
+  .one p {
+    font-size: 3rem;
+  }
+  /*  ========== responsive para body index ======== */
+  .two {
+    padding: 0%;
+  }
+  .three {
+    padding: 0%;
+    padding-top: 2rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  /*  ========== responsive para register ======== */
+  .one {
+    justify-content: center;
+  }
+  .one p {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  .formRegister .contenedorRegister div {
+    width: 200px;
+  }
+  .intro p {
+    font-size: 20px;
+  }
+  .one img {
+    display: none;
+  }
+  .two {
+    padding: 0%;
+  }
+  .three {
+    padding: 1rem 1%;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  }
+  .three div {
+    padding: 2rem;
+  }
+  .footer .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    gap: 2rem;
+  }
+  .credit {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .one {
+    padding-top: 0%;
+  }
+  .two {
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  }
+  .perfil {
+    padding: 0.5rem;
+  }
+  .three div a {
+    font-size: 0.8rem;
+  }
+  .three div .btn span {
+    padding: 0.3rem 0.5rem;
+  }
+  .credit {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=sass.css.map */

@@ -5,8 +5,48 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/styles.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <link rel="stylesheet" href="../css/sass.css"> 
   <title>Contacto</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    form {
+        margin: 50px auto;
+        width: 60%;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input, textarea, select {
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #008CBA;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    input[type="submit"]:hover {
+        background-color: #005D7A;
+    }
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+</style>
 </head>
 
 <body>
@@ -33,7 +73,47 @@
 </header>
 
 <div class="cuerpo">
+    <h1>Contacto</h1>
+	<form>
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre" required>
+		
+		<label for="email">Correo electrónico:</label>
+		<input type="email" id="email" name="email" required>
 
+		<label for="telefono">Teléfono:</label>
+		<input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="123-456-7890" required>
+
+		<label for="departamento">Departamento:</label>
+		<select id="departamento" name="departamento" required>
+			<option value="">Seleccione un departamento</option>
+			<option value="Admisión">Admisión</option>
+			<option value="Facturación">Facturación</option>
+			<option value="Emergencia">Emergencia</option>
+			<option value="Consulta externa">Consulta externa</option>
+			<option value="Internamiento">Internamiento</option>
+		</select>
+
+		<label for="motivo">Motivo de la consulta:</label>
+		<select id="motivo" name="motivo" required>
+			<option value="">Seleccione un motivo</option>
+			<option value="Consulta médica">Consulta médica</option>
+			<option value="Cita para examen">Cita para examen</option>
+			<option value="Información de servicios">Información de servicios</option>
+			<option value="Queja o sugerencia">Queja o sugerencia</option>
+			<option value="Otro">Otro</option>
+		</select>
+
+		<label for="mensaje">Mensaje:</label>
+		<textarea id="mensaje" name="mensaje" rows="10" required></textarea>
+
+		<label for="terminos">
+			<input type="checkbox" id="terminos" name="terminos" required>
+			Acepto los términos y condiciones
+		</label>
+
+		<input type="submit" value="Enviar">
+	</form>
 </div>
   <!-- pie de pagina -->
   <footer class="footer">

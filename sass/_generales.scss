@@ -1,0 +1,23 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+/* variables css */
+:root {
+    --cian: rgb(49, 192, 202);
+    --black: rgb(68, 68, 68);
+    --light-color: rgb(105, 103, 103);
+    --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border: .1rem solid var(--cian);
+    --black: rgb(0, 10, 10);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    background-image: url('../images/background.svg')
+}

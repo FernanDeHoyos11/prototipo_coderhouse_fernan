@@ -1,0 +1,88 @@
+/*inicio de css para navbar*/
+$primary-color: #16A085;
+$transition-delay: 0.3s;
+
+nav div {
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0.5rem 0.5rem 0 rgba(22, 160, 133, 0.2);
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  transition-delay: $transition-delay;
+  transform: translateY(-100%);
+
+  ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      padding: 10px;
+
+      a {
+        color: black;
+        text-decoration: none;
+
+        &:hover {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+/* para hacer el nav responcive */
+.toggle-menu {
+    position: absolute;
+    top: 3.5rem;
+    left: 0.5rem;
+    cursor: pointer;
+    width: 40px;
+    z-index: 1;
+  
+    img {
+      width: 100%;
+    }
+  }
+  
+.show-menu {
+    transform: translateY(0);
+}
+
+.checkMenu {
+    display: none;
+}
+
+.checkMenu:checked+.divNav {
+    transform: translateY(0)
+}
+
+.navAuth {
+    padding-right: 30px;
+}
+
+li img {
+    width: 80px;
+    height: 80px;
+}
+
+.signIn {
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.signUp {
+    border: 1px aqua solid;
+    border-radius: 10px;
+}
+
