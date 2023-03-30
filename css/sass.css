@@ -1,14 +1,13 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
-/* variables css */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"); /* variables css */
 :root {
   --cian: rgb(49, 192, 202);
   --black: rgb(68, 68, 68);
   --light-color: rgb(105, 103, 103);
-  --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
-  --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
+  --box-shadow: .1rem .1rem 0 rgba(22, 160, 133, .2);
+  --text-shadow: .2rem .2rem 0 rgba(0, 0, 0, .2);
   --border: .1rem solid var(--cian);
-  --black: rgb(0, 10, 10);
+  --black: rgb(14, 23, 23);
 }
 
 * {
@@ -18,6 +17,7 @@
 
 body {
   position: relative;
+  font-family: "Ubuntu", sans-serif;
   background-image: url("../images/background.svg");
 }
 
@@ -102,6 +102,7 @@ li img {
 
 footer {
   padding: 1rem 9%;
+  background-color: rgb(199, 199, 199);
 }
 footer .box-container {
   display: grid;
@@ -139,7 +140,6 @@ footer .credit span {
   color: var(--black);
 }
 
-/*inicio de css para footer*/
 /*inicio de css para index*/
 main {
   padding: 10px;
@@ -248,6 +248,7 @@ main {
 }
 .two .perfil img {
   height: 20rem;
+  width: 100%;
   border: var(--border);
   border-radius: 0.5rem;
   margin-top: 1rem;
@@ -348,10 +349,10 @@ main {
 /* ======= login =======*/
 .logo {
   display: flex;
-  flex-direction: column;
   align-items: center;
   align-content: center;
   justify-content: center;
+  flex-direction: column;
 }
 .logo .imgLogo {
   height: 110px;
@@ -368,10 +369,10 @@ main {
 .formLogin {
   height: 100%;
   display: flex;
-  flex-direction: row;
   align-items: center;
   align-content: center;
   justify-content: center;
+  flex-direction: row;
 }
 .formLogin .divLogo {
   display: flex;
@@ -384,9 +385,8 @@ main {
 }
 .formLogin .contenedor {
   width: 50%;
-  /* Gradiente de color de fondo */
-  display: flex;
   flex-direction: column;
+  display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -470,6 +470,7 @@ main {
 
 .credit {
   display: flex;
+  align-items: center;
   align-content: center;
   justify-content: center;
 }
@@ -478,19 +479,20 @@ main {
 .contenedorForm {
   background-image: linear-gradient(to bottom right, #9af0ff, #caeffa, #e6f4ff);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .contenedorForm .intro {
   margin-left: 3%;
   margin-right: 3%;
   margin-top: 30px;
   display: flex;
-  flex-direction: row;
-  align-content: center;
   align-items: center;
+  align-content: center;
   justify-content: center;
+  flex-direction: row;
 }
 .contenedorForm .intro p {
   justify-content: center;
@@ -508,10 +510,10 @@ main {
   height: 20%;
   margin-top: 100px;
   display: flex;
-  flex-direction: row;
-  align-content: center;
   align-items: center;
+  align-content: center;
   justify-content: center;
+  flex-direction: row;
 }
 .contenedorForm .logoForm img {
   width: 100%;
@@ -522,19 +524,19 @@ main {
   margin: 100px;
   margin-top: 10px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   align-content: center;
   justify-content: center;
+  flex-direction: column;
 }
 .contenedorForm .formRegister .contenedorRegister {
   background: transparent;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   align-content: center;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .contenedorForm .formRegister .contenedorRegister div {
   width: 300px;
@@ -563,12 +565,12 @@ form {
 }
 form label {
   display: block;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 1px;
 }
 form input,
 form textarea,
 form select {
-  padding: 5px;
   border-radius: 5px;
   border: none;
   width: 100%;
@@ -612,6 +614,12 @@ h1 {
     width: 80%;
   }
 }
+@media screen and (max-width: 1151px) {
+  .two .perfil img {
+    height: 20rem;
+    width: 80%;
+  }
+}
 @media screen and (min-width: 720px) {
   .toggle-menu {
     display: none;
@@ -636,9 +644,9 @@ h1 {
   .two {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
-  .two img {
-    height: auto;
-    width: 100%;
+  .two .perfil img {
+    height: 18rem;
+    width: 90%;
   }
   .three div a {
     font-size: 1rem;
@@ -737,14 +745,33 @@ h1 {
   .three div h3 {
     font-size: 1.5rem;
   }
+  .two {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+  .two .perfil img {
+    height: 15rem;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 645px) {
+  .two {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+  .two .perfil img {
+    height: 20rem;
+    width: 70%;
+  }
+  .contenedor-login {
+    margin: 100px 0px 0px;
+  }
 }
 @media screen and (max-width: 520px) {
   .two {
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
-  .two img {
-    height: auto;
-    width: 100%;
+  .two .perfil img {
+    height: 20rem;
+    width: 70%;
   }
   .contenedor-login {
     margin: 100px 0px 0px;
@@ -797,6 +824,10 @@ h1 {
   }
   .two {
     padding: 0%;
+  }
+  .two .perfil img {
+    height: 20rem;
+    width: 100%;
   }
   .three {
     padding: 1rem 1%;
