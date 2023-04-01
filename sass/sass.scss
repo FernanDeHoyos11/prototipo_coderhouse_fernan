@@ -11,6 +11,34 @@
     justify-content: center;
 }
 
+@mixin buttons{
+    
+        background-image: linear-gradient(to bottom right, #11c8ff, #2196F3);
+        border: none;
+        color: white;
+        height: 3rem;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 50px;
+        text-align: center;
+        
+        &hover {
+            background-image: linear-gradient(to bottom right, #096683, #53b1ff);
+            border: none;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+    }
+
+
 
 
 /*inicio de css para index*/
@@ -45,6 +73,9 @@ main {
         font-size: 4rem;
         padding: 0.5rem 0;
         text-shadow: var(--text-shadow);
+
+
+
     }
 
     & div {
@@ -134,6 +165,8 @@ main {
         border: var(--border);
         padding: 1rem;
 
+        overflow: hidden;
+        
         img {
             height: 20rem;
             width: 100%;
@@ -145,7 +178,6 @@ main {
         }
 
         h3 {
-            margin-top: 1rem;
             font-size: 1.8rem;
             font-weight: bold;
             color: var(--black);
@@ -154,20 +186,33 @@ main {
         span {
             font-size: 1.2rem;
             color: var(--gray);
-            margin-top: 0.5rem;
+            margin-top: 0.8rem;
         }
+       
+        .card{
+            padding: 1rem;
+            transform: translateY(100%);
+            transition: transform 500ms ease;
 
+            
         .share a {
-            height: 2.5rem;
-            width: 2.5rem;
-            line-height: 2.3rem;
+            text-decoration: none;
+            width: 1.8rem;
+            line-height: 1.5rem;
             font-size: 2rem;
             color: var(--cian);
-            border: var(--border);
             border-radius: 0.5rem;
-            margin: 0.3rem;
+            margin: 0.5rem 0.5rem 0.5rem 0rem;
+        }
+        
+    }
+    &:hover{
+        .card{
+            transform: translateY(0);
+            transition: transform 500ms ease;
         }
     }
+    } 
 }
 
 .div-texto {
@@ -185,6 +230,10 @@ main {
         color: var(--black);
         font-size: 3rem;
         letter-spacing: .4rem;
+
+        span{
+            color: var(--cian);
+        }
     }
 
     img {
@@ -233,21 +282,43 @@ main {
             font-size: 1.4rem;
         }
 
-        a {
+        .btn {
             display: inline-block;
             margin-top: 1rem;
             padding: 0.2rem;
             padding-left: 1rem;
-            border: var(--border);
+            border: var(--cian) 1px solid;
             border-radius: 0.5rem;
             box-shadow: var(--box-shadow);
             color: var(--cian);
             cursor: pointer;
             font-size: 1.2rem;
             background: rgb(240, 240, 240);
-        }
+            transition: all 0.3s ease;
+            text-decoration: none;
+            
+          
+          &:hover {
+            color: var(--cian);
+            transform: translateX(0.5rem);
+          }
+          
+           span {
+            padding: 0.7rem 1rem;
+            border-radius: 0.5rem;
+            background: var(--cian);
+            color: rgb(240, 240, 240);
+            margin-left: 0.5rem;
+            transition: all 0.3s ease;
+          }
+          
+          &:hover span {
+            background: var(--cian);
+            color: white;
+          }
+          
     }
-}
+}}
 
 /* ======= login =======*/
 
@@ -255,7 +326,7 @@ main {
 .logo {
     @include caja_flex();
     flex-direction: column;
-    
+
 
 
     .imgLogo {
@@ -269,8 +340,13 @@ main {
 .contenedor-login {
     margin: 100px 30px 30px;
     height: 100%;
-    background-image: linear-gradient(to bottom right, #9af0ff, #caeffa, #e6f4ff);
+   
+/*     background-image: linear-gradient(to bottom right, #9af0ff, #caeffa, #e6f4ff);
+ */
+  background-color: #69e9ff;
+  border-radius: 50% 20% 50% 30%/30% 50% 20% 40%;
 }
+
 
 .formLogin {
     height: 100%;
@@ -293,8 +369,10 @@ main {
 
     .contenedor {
         width: 50%;
-       flex-direction: column;
+        flex-direction: column;
         @include caja_flex();
+
+        
 
         div {
             width: 80%;
@@ -333,55 +411,12 @@ main {
 
     }
 
+.buttom{
+    @include buttons();
+}
 
 
-
-    .buttom {
-        background-image: linear-gradient(to bottom right, #11c8ff, #2196F3);
-        /* Gradiente de color de fondo */
-        border: none;
-        /* Borde sin estilo */
-        color: white;
-        /* Color de texto */
-        padding-top: 20px;
-        padding-block-end: 30px;
-        text-decoration: none;
-        /* Sin subrayado */
-        display: inline-block;
-        /* Mostrar como bloque */
-        font-size: 16px;
-        /* Tamaño de la fuente */
-        margin: 4px 2px;
-        /* Margen entre elementos */
-        cursor: pointer;
-        /* Cambiar el cursor al pasar el ratón */
-        border-radius: 50px;
-        /* Dar forma circular al botón */
-
-
-        &hover {
-            background-image: linear-gradient(to bottom right, #096683, #53b1ff);
-            /* Gradiente de color de fondo */
-            border: none;
-            /* Borde sin estilo */
-            color: white;
-            /* Color de texto */
-            padding-top: 20px;
-            padding-block-end: 30px;
-            text-decoration: none;
-            /* Sin subrayado */
-            display: inline-block;
-            /* Mostrar como bloque */
-            font-size: 16px;
-            /* Tamaño de la fuente */
-            margin: 4px 2px;
-            /* Margen entre elementos */
-            cursor: pointer;
-            /* Cambiar el cursor al pasar el ratón */
-            border-radius: 50px;
-            /* Dar forma circular al botón */
-        }
-    }
+    
 }
 
 .credit {
@@ -407,7 +442,7 @@ main {
         margin-top: 30px;
         @include caja_flex();
         flex-direction: row;
-        
+
 
         p {
             justify-content: center;
@@ -431,7 +466,7 @@ main {
         margin-top: 100px;
         @include caja_flex();
         flex-direction: row;
-        
+
 
         img {
             width: 100%;
@@ -445,6 +480,14 @@ main {
         margin-top: 10px;
         @include caja_flex();
         flex-direction: column;
+        
+        .btn-register{
+            width: 15rem;
+            .buttom{
+                @include buttons();
+                width: 15rem;
+            }
+        }
 
         .contenedorRegister {
             background: transparent;
@@ -453,7 +496,7 @@ main {
             flex-wrap: wrap;
 
             div {
-                width: 300px;
+                width:15rem;
                 padding: 10px;
                 margin: 5px;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -475,21 +518,41 @@ main {
 
 /* ======= citas =======*/
 .cuerpo {
-    margin-top: 150px;
+
+    margin: 150px 30px 30px;
 }
 
 
 /* ====== contacto ====== */
-form {
+.form-contacto {
     margin: 50px auto;
     width: 60%;
+
+    .terminos{
+        
+        label{
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            input{
+                width: 1.5rem;
+                padding: 1rem;
+            }
+
+            span{
+                padding-left: 10px;
+            }
+        }
+    } 
 
     label {
         display: block;
         margin-top: 10px;
         margin-bottom: 1px;
     }
-
+    
     input,
     textarea,
     select {
@@ -497,6 +560,7 @@ form {
         border-radius: 5px;
         border: none;
         width: 100%;
+        height: 2rem;
         box-sizing: border-box;
 
         &:focus {
@@ -527,6 +591,16 @@ h1 {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 30px;
+}
+
+/* ======= citas ======= */
+
+.btn-primary {
+    width: 100%;
+}
+
+.modal-header{
+   background-color: #9af0ff;
 }
 
 /* ======= responsive =======*/
@@ -580,10 +654,11 @@ h1 {
 }
 
 @media screen and (max-width: 840px) {
-   
+
 
     .two {
         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
         .perfil img {
             height: 18rem;
             width: 90%;
@@ -705,6 +780,7 @@ h1 {
         }
 
         .contenedor {
+            
             width: 100%;
         }
     }
@@ -727,10 +803,23 @@ h1 {
 
     .two {
         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-        .perfil img {
+
+        .perfil{
+             img {
             height: 15rem;
-            width: 90%;
+            width: 12rem;  
         }
+
+        .card{
+            padding: 0px;
+            transform: none;
+            
+            .share a{
+                width: 1.5rem;
+                margin: 1rem 0.3rem 0.3rem 1rem;
+            }
+        }
+    }
     }
 
 
@@ -739,6 +828,7 @@ h1 {
 @media screen and (max-width: 645px) {
     .two {
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
         .perfil img {
             height: 20rem;
             width: 70%;
@@ -753,6 +843,7 @@ h1 {
 @media screen and (max-width: 520px) {
     .two {
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
         .perfil img {
             height: 20rem;
             width: 70%;
@@ -799,6 +890,18 @@ h1 {
         padding-top: 2rem;
     }
 
+    .formLogin .buttom {
+        font-size: 20px;
+        margin: 4px 4px;
+        cursor: pointer;
+    }
+
+    .contenedorForm .logoForm img {
+        width: 10rem;
+    }
+
+
+
 }
 
 @media screen and (max-width: 360px) {
@@ -808,7 +911,7 @@ h1 {
         justify-content: center;
 
         p {
-            font-size: 2.5rem;
+            font-size: 2rem;
             width: 100%;
         }
 
@@ -829,6 +932,7 @@ h1 {
 
     .two {
         padding: 0%;
+
         .perfil img {
             height: 20rem;
             width: 100%;
@@ -851,6 +955,10 @@ h1 {
 
     .credit {
         font-size: 13px;
+    }
+
+    .buttom {
+        font-size: 2px;
     }
 
 }

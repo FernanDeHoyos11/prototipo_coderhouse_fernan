@@ -8,45 +8,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
   <link rel="stylesheet" href="../css/sass.css"> 
-  <title>Contacto</title>
-  <style>
-    body {
-        font-family: Arial, sans-serif;
-    }
-    form {
-        margin: 50px auto;
-        width: 60%;
-    }
-    label {
-        display: block;
-        margin-bottom: 10px;
-    }
-    input, textarea, select {
-        padding: 5px;
-        border-radius: 5px;
-        border: none;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    input[type="submit"] {
-        background-color: #008CBA;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        margin-top: 20px;
-    }
-    input[type="submit"]:hover {
-        background-color: #005D7A;
-    }
-    h1 {
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 30px;
-    }
-</style>
+  <link rel="icon" type="image/png" href="../images/logo-cian-icon.jpg">
+
+  <title>Contacto | Hospital</title>
+  
 </head>
 
 <body>
@@ -65,7 +30,6 @@
                             alt="logo cian hospital"></a></li>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./historia.html">Historia</a></li>
                 <li><a href="./citas.html">Citas</a></li>
             </ul>
         </div>
@@ -73,8 +37,8 @@
 </header>
 
 <div class="cuerpo">
-    <h1>Contacto</h1>
-	<form>
+    <h1>Contactenos</h1>
+	<form class="form-contacto">
 		<label for="nombre">Nombre:</label>
 		<input type="text" id="nombre" name="nombre" required>
 		
@@ -107,10 +71,12 @@
 		<label for="mensaje">Mensaje:</label>
 		<textarea id="mensaje" name="mensaje" rows="10" required></textarea>
 
-		<label for="terminos">
-			<input type="checkbox" id="terminos" name="terminos" required>
-			Acepto los términos y condiciones
-		</label>
+		<div class="terminos">
+            <label for="terminos">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <span>Acepto los términos y condiciones</span>
+            </label>
+        </div>
 
 		<input type="submit" value="Enviar">
 	</form>
