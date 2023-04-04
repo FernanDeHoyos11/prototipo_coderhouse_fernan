@@ -776,6 +776,13 @@ h1 {
     padding: 3px;
     margin: 3px;
   }
+  nav .divNav ul .liimg {
+    border: none;
+  }
+  nav .divNav ul .liimg img {
+    border: 1px black solid;
+    border-radius: 10px;
+  }
   nav .divNav .navAuth {
     padding-right: 0;
   }

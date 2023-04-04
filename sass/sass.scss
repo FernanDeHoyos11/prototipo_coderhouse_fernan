@@ -751,6 +751,14 @@ h1 {
                     padding: 3px;
                     margin: 3px;
                 }
+
+                .liimg {
+                    border: none;
+                   img{
+                    border: 1px black solid;
+                    border-radius: 10px;
+                   }
+                }
             }
 
             .navAuth {
