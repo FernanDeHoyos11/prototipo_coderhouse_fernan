@@ -934,8 +934,16 @@ h1 {
         width: 10rem;
     }
 
-
-
+   
+    .div-texto h2{
+    font-size: 2rem;
+    span {
+        font-size: 2rem;
+    }
+    }
+    .form-contacto {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 360px) {
