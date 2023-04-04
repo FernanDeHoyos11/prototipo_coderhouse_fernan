@@ -24,7 +24,7 @@ body {
 nav div {
   overflow: hidden;
   background-color: white;
-  box-shadow: 0.5rem 0.5rem 0 rgba(22, 160, 133, 0.2);
+  box-shadow: 0.3rem 0.3rem 0 rgba(188, 222, 215, 0.2);
   display: flex;
   position: fixed;
   top: 0;
@@ -35,7 +35,7 @@ nav div {
   align-items: center;
   transition: 0.3s;
   transition-delay: 0.3s;
-  transform: translateY(-100%);
+  transform: translateY(-110%);
 }
 nav div ul {
   display: flex;
@@ -424,6 +424,7 @@ main {
   justify-content: center;
 }
 .formLogin .contenedor div {
+  position: relative;
   width: 80%;
   padding: 10px;
   margin: 5px;
@@ -442,10 +443,29 @@ main {
   height: -moz-max-content;
   height: max-content;
   border-radius: 10px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  padding-left: 10px;
+  padding-left: 1.8rem;
+  width: -webkit-fill-available;
+  height: 30px;
+}
+.formLogin .contenedor div .buttom {
+  padding-left: 0px;
+}
+.formLogin .contenedor div a {
+  border: none;
+  border-radius: 10px;
   width: 100%;
   height: 30px;
+  text-align: center;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #113be4;
+}
+.formLogin .contenedor div .fas.fa-user, .formLogin .contenedor div .fas.fa-lock {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  font-size: 1.2rem;
+  color: #ccc;
 }
 .formLogin .contenedor div:focus,
 .formLogin .contenedor div input[type]:focus {

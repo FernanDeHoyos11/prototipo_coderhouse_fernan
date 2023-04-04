@@ -5,7 +5,7 @@ $transition-delay: 0.3s;
 nav div {
   overflow: hidden;
   background-color: white;
-  box-shadow: 0.5rem 0.5rem 0 rgba(22, 160, 133, 0.2);
+  box-shadow: 0.3rem 0.3rem 0 rgba(188, 222, 215, 0.2);
   display: flex;
   position: fixed;
   top: 0;
@@ -16,7 +16,7 @@ nav div {
   align-items: center;
   transition: 0.3s;
   transition-delay: $transition-delay;
-  transform: translateY(-100%);
+  transform: translateY(-110%);
 
   ul {
     display: flex;
