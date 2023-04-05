@@ -3,7 +3,7 @@
 @import "footer";
 
 
-
+/* mixin para flex */
 @mixin caja_flex {
     display: flex;
     align-items: center;
@@ -11,8 +11,8 @@
     justify-content: center;
 }
 
+/* mixin para botones */
 @mixin buttons{
-    
         background-image: linear-gradient(to bottom right, #11c8ff, #2196F3);
         border: none;
         color: white;

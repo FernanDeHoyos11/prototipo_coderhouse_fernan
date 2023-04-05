@@ -141,6 +141,8 @@ footer .credit span {
   color: var(--black);
 }
 
+/* mixin para flex */
+/* mixin para botones */
 /*inicio de css para index*/
 main {
   padding: 10px;
