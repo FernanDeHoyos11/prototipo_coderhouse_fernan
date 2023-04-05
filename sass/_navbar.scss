@@ -43,46 +43,46 @@ nav div {
 
 /* para hacer el nav responcive */
 .toggle-menu {
-    position: absolute;
-    top: 3.5rem;
-    left: 0.5rem;
-    cursor: pointer;
-    width: 40px;
-    z-index: 1;
-  
-    img {
-      width: 100%;
-    }
+  position: absolute;
+  top: 3.5rem;
+  left: 0.5rem;
+  cursor: pointer;
+  width: 40px;
+  z-index: 1;
+
+  img {
+    width: 100%;
   }
-  
+}
+
 .show-menu {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .checkMenu {
-    display: none;
+  display: none;
 }
 
 .checkMenu:checked+.divNav {
-    transform: translateY(0)
+  transform: translateY(0)
 }
 
 .navAuth {
-    padding-right: 30px;
+  padding-right: 30px;
 }
 
 li img {
-    width: 80px;
-    height: 80px;
+  width: 80px;
+  height: 80px;
 }
 
 .signIn {
-    background-color: aqua;
-    border-radius: 10px;
+  margin: 5px;
+  background-color: aqua;
+  border-radius: 10px;
 }
 
 .signUp {
-    border: 1px aqua solid;
-    border-radius: 10px;
+  border: 1px aqua solid;
+  border-radius: 10px;
 }
-
