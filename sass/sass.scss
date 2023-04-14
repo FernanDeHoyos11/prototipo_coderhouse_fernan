@@ -222,13 +222,13 @@ main {
     justify-content: center;
     align-items: center;
 
-    h2 {
+    h1,h2 {
         text-align: center;
         padding-bottom: 2rem;
         text-shadow: var(--text-shadow);
         text-transform: uppercase;
         color: var(--black);
-        font-size: 3rem;
+        font-size: 2rem;
         letter-spacing: .4rem;
 
         span{

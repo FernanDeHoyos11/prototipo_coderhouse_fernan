@@ -295,16 +295,16 @@ main {
   justify-content: center;
   align-items: center;
 }
-.div-texto h2 {
+.div-texto h1, .div-texto h2 {
   text-align: center;
   padding-bottom: 2rem;
   text-shadow: var(--text-shadow);
   text-transform: uppercase;
   color: var(--black);
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 0.4rem;
 }
-.div-texto h2 span {
+.div-texto h1 span, .div-texto h2 span {
   color: var(--cian);
 }
 .div-texto img {
